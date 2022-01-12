@@ -1,0 +1,93 @@
+.login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color;
+
+    form{
+        width: 350px;
+        height: 500px;
+        background-color: #252733;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .img{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 60px;
+
+            }
+            h2,h5{
+                color: #fff;
+            }
+            h2{
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+        h1{
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: .3px;
+            font-weight: 500;
+            background-color: hsla(0,0%,100%,.06274509803921569);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            border-radius: 3px;
+            place-self: center;
+            padding: 2px 14px;
+            small{
+                color: #cdac0b;
+                font-weight: 600;
+
+            }
+        }
+        .actions{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                color: #cdac0b;
+                font-size: 12px;
+            }
+            .btn-login{
+                background-color: $login-botao;
+                &:hover{
+                    background-color: #d6b40a;
+                }
+
+            }
+        }
+        .flex-input{
+            margin-bottom: 30px;
+            &:nth-last-child(1){
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+    .footer{
+        position: absolute;
+        bottom: 10px;
+        p{
+            color: #252733;
+            font-size: 12px;
+            a{
+                font-weight: 600;
+                text-decoration: none;
+                color: #252733;
+            }
+        }
+    }
+
+}
