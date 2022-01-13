@@ -5802,10 +5802,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=script&setup=true&lang=js&":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=script&setup=true&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5818,6 +5818,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_PacienteTrafego__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin/PacienteTrafego.vue */ "./resources/js/components/admin/PacienteTrafego.vue");
 /* harmony import */ var _Input_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Input.vue */ "./resources/js/components/Input.vue");
 /* harmony import */ var _EliminarTexto_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../EliminarTexto.vue */ "./resources/js/components/EliminarTexto.vue");
+/* harmony import */ var _recepcao_PacienteDados_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../recepcao/PacienteDados.vue */ "./resources/js/components/recepcao/PacienteDados.vue");
+/* harmony import */ var _recepcao_PacienteDadosSkeleton_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../recepcao/PacienteDadosSkeleton.vue */ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue");
 //
 //
 //
@@ -5972,6 +5974,77 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 
 
 
@@ -5985,12 +6058,14 @@ __webpack_require__.r(__webpack_exports__);
     PacienteTransito: _admin_PacienteTrafego__WEBPACK_IMPORTED_MODULE_2__["default"],
     PacienteTrafego: _admin_PacienteTrafego__WEBPACK_IMPORTED_MODULE_2__["default"],
     InputElement: _Input_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    EliminarTexto: _EliminarTexto_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    EliminarTexto: _EliminarTexto_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    PacienteDados: _recepcao_PacienteDados_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    PacienteDadosSkeleton: _recepcao_PacienteDadosSkeleton_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
   },
   data: function data() {
     return {
       hideCon: false,
-      modal: true,
+      modal: false,
       dia: true,
       semana: false,
       mes: false,
@@ -6014,6 +6089,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     handleModal: function handleModal() {
       this.modal = true;
+      console.log(this.modal);
     },
     handleFechar: function handleFechar() {
       this.modal = false;
@@ -6060,6 +6136,72 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDados.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDados.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/***/ (() => {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
 
@@ -13235,6 +13377,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".skel small, .skel span {\n  animation: pulse-bg 2s infinite linear forwards;\n  -webkit-animation: pulse-bg 2s infinite linear forwards;\n  background: #ddd;\n  background: linear-gradient(to right, #ddd 8%, #ccc 18%, #dddd 33%);\n  background-size: 800px 104px;\n}\n.skel .paci h3 {\n  display: flex;\n}\n.skel .paci h3 small {\n  /* animation: pulse-bg 2s infinite; */\n}\n.skel .paci h3 span {\n  /* animation: pulse-bg 2s infinite; */\n  width: 350px !important;\n  height: 40px;\n  border-radius: 2px;\n}\n.skel .paci .ano {\n  width: 80px;\n  height: 40px;\n  /* animation: pulse-bg 2s infinite; */\n  border-radius: 2px;\n}\n.skel .datos span {\n  /* animation: pulse-bg 2s infinite; */\n  height: 30px;\n  width: 150px;\n  border-radius: 2px;\n}\n@-webkit-keyframes pulse-bg {\n  /*  0%{\n       background-color: #ccc;\n   }\n   50%{\n       background-color: #dddddd;\n   }\n   100%{\n       background-color: #ccc;\n   } */\n0% {\n    background-position: -468px 0;\n}\n100% {\n    background-position: 468px 0;\n}\n}\n@keyframes pulse-bg {\n  /*  0%{\n       background-color: #ccc;\n   }\n   50%{\n       background-color: #dddddd;\n   }\n   100%{\n       background-color: #ccc;\n   } */\n0% {\n    background-position: -468px 0;\n}\n100% {\n    background-position: 468px 0;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30933,6 +31099,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_RecuperarSenha_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -76836,7 +77032,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Index_vue_vue_type_template_id_6bcae8a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=6bcae8a4& */ "./resources/js/components/recepcao/Index.vue?vue&type=template&id=6bcae8a4&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/js/components/recepcao/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_vue_vue_type_script_setup_true_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&setup=true&lang=js& */ "./resources/js/components/recepcao/Index.vue?vue&type=script&setup=true&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -76846,7 +77042,7 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Index_vue_vue_type_script_setup_true_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Index_vue_vue_type_template_id_6bcae8a4___WEBPACK_IMPORTED_MODULE_0__.render,
   _Index_vue_vue_type_template_id_6bcae8a4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
@@ -76859,6 +77055,89 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/components/recepcao/Index.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDados.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDados.vue ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PacienteDados_vue_vue_type_template_id_67a5f88c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PacienteDados.vue?vue&type=template&id=67a5f88c& */ "./resources/js/components/recepcao/PacienteDados.vue?vue&type=template&id=67a5f88c&");
+/* harmony import */ var _PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PacienteDados.vue?vue&type=script&lang=js& */ "./resources/js/components/recepcao/PacienteDados.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PacienteDados_vue_vue_type_template_id_67a5f88c___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PacienteDados_vue_vue_type_template_id_67a5f88c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/recepcao/PacienteDados.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDadosSkeleton.vue ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PacienteDadosSkeleton_vue_vue_type_template_id_e917bb0e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e& */ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e&");
+/* harmony import */ var _PacienteDadosSkeleton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PacienteDadosSkeleton.vue?vue&type=script&lang=js& */ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=script&lang=js&");
+/* harmony import */ var _PacienteDadosSkeleton_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _PacienteDadosSkeleton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PacienteDadosSkeleton_vue_vue_type_template_id_e917bb0e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PacienteDadosSkeleton_vue_vue_type_template_id_e917bb0e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/recepcao/PacienteDadosSkeleton.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -76975,10 +77254,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/recepcao/Index.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/recepcao/Index.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
+/***/ "./resources/js/components/recepcao/Index.vue?vue&type=script&setup=true&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/recepcao/Index.vue?vue&type=script&setup=true&lang=js& ***!
+  \****************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -76986,8 +77265,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_setup_true_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index.vue?vue&type=script&setup=true&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=script&setup=true&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_setup_true_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDados.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDados.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PacienteDados.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDados.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default())); 
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PacienteDadosSkeleton.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -77026,6 +77341,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_RecuperarSenha_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./RecuperarSenha.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/auth/RecuperarSenha.vue?vue&type=style&index=0&lang=scss&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss& ***!
+  \******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=style&index=0&lang=scss&");
 
 
 /***/ }),
@@ -77228,6 +77556,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_6bcae8a4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_6bcae8a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index.vue?vue&type=template&id=6bcae8a4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/Index.vue?vue&type=template&id=6bcae8a4&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDados.vue?vue&type=template&id=67a5f88c&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDados.vue?vue&type=template&id=67a5f88c& ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_template_id_67a5f88c___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_template_id_67a5f88c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDados_vue_vue_type_template_id_67a5f88c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PacienteDados.vue?vue&type=template&id=67a5f88c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDados.vue?vue&type=template&id=67a5f88c&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e& ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_template_id_e917bb0e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_template_id_e917bb0e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PacienteDadosSkeleton_vue_vue_type_template_id_e917bb0e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e&");
 
 
 /***/ }),
@@ -78528,7 +78890,7 @@ var render = function () {
                 staticClass: "icon marc",
                 attrs: { name: "user-clock" },
               }),
-              _vm._v(" Marcar Consulta"),
+              _vm._v(" Agendar Consulta"),
             ],
             1
           ),
@@ -78544,29 +78906,6 @@ var render = function () {
           descricao: "Mostra alguns dados importantes para a recepção",
         },
       }),
-      _vm._v(" "),
-      _c("div", { staticClass: "page-opcoes" }, [
-        _c("ul", [
-          _c("li", { on: { click: _vm.handleDia } }, [_vm._v("Dia")]),
-          _vm._v(" "),
-          _c("li", { on: { click: _vm.handleSemana } }, [_vm._v("Semana")]),
-          _vm._v(" "),
-          _c("li", { on: { click: _vm.handleMes } }, [_vm._v("Mês")]),
-          _vm._v(" "),
-          _c("li", { on: { click: _vm.handleAno } }, [_vm._v("Ano")]),
-          _vm._v(" "),
-          _c("div", {
-            class:
-              _vm.dia === true
-                ? "animacao s-dia"
-                : _vm.semana === true
-                ? "animacao s-semana"
-                : _vm.mes === true
-                ? "animacao s-mes"
-                : _vm.ano === true && "animacao s-ano",
-          }),
-        ]),
-      ]),
       _vm._v(" "),
       _c("div", { staticClass: "page-estatisticas" }, [
         _c("div", { staticClass: "esta-" }, [
@@ -78733,6 +79072,61 @@ var render = function () {
       _vm._v(" "),
       _c("cabecario", {
         attrs: {
+          icon: "user-md",
+          ver: true,
+          nome: "Médicos com consultas marcadas",
+          descricao: "Lista de médicos que possuem consultas já marcadas",
+        },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "funcionarios-vendas" }, [
+        _c(
+          "div",
+          { staticClass: "func-v" },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "val" }, [
+              _c(
+                "span",
+                { staticClass: "cons", attrs: { title: "Consultas marcadas" } },
+                [
+                  _c(
+                    "small",
+                    [
+                      _c("v-icon", {
+                        staticClass: "icon",
+                        attrs: { scale: ".9", name: "stethoscope" },
+                      }),
+                    ],
+                    1
+                  ),
+                  _vm._v(" Consultas"),
+                ]
+              ),
+              _vm._v(" "),
+              _c("small", { staticClass: "numb-cons" }, [_vm._v("4")]),
+            ]),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { attrs: { to: "/" } },
+              [
+                _c("v-icon", {
+                  staticClass: "icon",
+                  attrs: { scale: "1.1", name: "info-circle" },
+                }),
+                _vm._v(" Mais detalhes"),
+              ],
+              1
+            ),
+          ],
+          1
+        ),
+      ]),
+      _vm._v(" "),
+      _c("cabecario", {
+        attrs: {
           icon: "user-injured",
           ver: false,
           nome: "Lista dos pacientes a serem atendidos",
@@ -78767,7 +79161,7 @@ var render = function () {
                     staticClass: "icon",
                     attrs: { scale: "1.2", name: "user-injured" },
                   }),
-                  _vm._v(" Realizar Consulta"),
+                  _vm._v(" Realizar Consulta (Agora)"),
                 ],
                 1
               ),
@@ -78807,7 +79201,8 @@ var render = function () {
                               type: "text",
                               name: "paciente",
                               id: "paciente",
-                              placeholder: "Introduza o nome ou o telefone",
+                              placeholder:
+                                "Introduza o nome, nº BI ou o telefone",
                             },
                             on: { keyup: _vm.texto },
                           }),
@@ -78830,170 +79225,171 @@ var render = function () {
                     ],
                     1
                   ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.eliminarT === true,
-                        expression: "eliminarT===true",
-                      },
-                    ],
-                    staticClass: "results",
-                  },
-                  [
-                    _c("ul", [
-                      _c("li", [
-                        _vm._m(0),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.eliminarT === true,
+                          expression: "eliminarT===true",
+                        },
+                      ],
+                      staticClass: "results",
+                    },
+                    [
+                      _c("ul", [
+                        _c("li", [
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _c(
+                            "small",
+                            {
+                              staticClass: "telefone",
+                              attrs: { title: "Número de Telefone" },
+                            },
+                            [
+                              _c("v-icon", {
+                                staticClass: "icon",
+                                attrs: { scale: ".9", name: "mobile-alt" },
+                              }),
+                              _vm._v(" 923000000"),
+                            ],
+                            1
+                          ),
+                        ]),
                         _vm._v(" "),
-                        _c(
-                          "small",
-                          {
-                            staticClass: "telefone",
-                            attrs: { title: "Número de Telefone" },
+                        _c("li", [
+                          _vm._m(2),
+                          _vm._v(" "),
+                          _c(
+                            "small",
+                            { staticClass: "telefone" },
+                            [
+                              _c("v-icon", {
+                                staticClass: "icon",
+                                attrs: { scale: ".9", name: "mobile-alt" },
+                              }),
+                              _vm._v(" 923000000"),
+                            ],
+                            1
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _vm._m(3),
+                          _vm._v(" "),
+                          _c(
+                            "small",
+                            { staticClass: "telefone" },
+                            [
+                              _c("v-icon", {
+                                staticClass: "icon",
+                                attrs: { scale: ".9", name: "mobile-alt" },
+                              }),
+                              _vm._v(" 923000000"),
+                            ],
+                            1
+                          ),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex" }, [_c("paciente-dados")], 1),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex" }, [
+                    _c(
+                      "div",
+                      { staticClass: "flex-input" },
+                      [
+                        _c("v-icon", {
+                          staticClass: "icon",
+                          attrs: { scale: "1.2", name: "stethoscope" },
+                        }),
+                        _vm._v(" "),
+                        _vm._m(4),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "flex-input" },
+                      [
+                        _c("v-icon", {
+                          staticClass: "icon",
+                          attrs: { scale: "1.2", name: "user-md" },
+                        }),
+                        _vm._v(" "),
+                        _vm._m(5),
+                      ],
+                      1
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex" }, [
+                    _c(
+                      "div",
+                      { staticClass: "flex-input" },
+                      [
+                        _c("v-icon", {
+                          staticClass: "icon",
+                          attrs: { scale: "1.2", name: "notes-medical" },
+                        }),
+                        _vm._v(" "),
+                        _c("textarea", {
+                          attrs: {
+                            name: "motivo",
+                            id: "motivo",
+                            cols: "30",
+                            rows: "4",
+                            placeholder: "Insira algum motivo",
                           },
-                          [
-                            _c("v-icon", {
-                              staticClass: "icon",
-                              attrs: { scale: ".9", name: "mobile-alt" },
-                            }),
-                            _vm._v(" 923000000"),
-                          ],
-                          1
-                        ),
-                      ]),
+                        }),
+                      ],
+                      1
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(6),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex" }, [
+                    _c("div", { staticClass: "fl" }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "fl" }, [
+                      _c(
+                        "button",
+                        { staticClass: "save", attrs: { type: "submit" } },
+                        [
+                          _c("v-icon", {
+                            staticClass: "icon",
+                            attrs: { scale: "1.2", name: "save" },
+                          }),
+                          _vm._v(" Salvar"),
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
-                      _c("li", [
-                        _vm._m(1),
-                        _vm._v(" "),
-                        _c(
-                          "small",
-                          { staticClass: "telefone" },
-                          [
-                            _c("v-icon", {
-                              staticClass: "icon",
-                              attrs: { scale: ".9", name: "mobile-alt" },
-                            }),
-                            _vm._v(" 923000000"),
-                          ],
-                          1
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _c(
-                          "small",
-                          { staticClass: "telefone" },
-                          [
-                            _c("v-icon", {
-                              staticClass: "icon",
-                              attrs: { scale: ".9", name: "mobile-alt" },
-                            }),
-                            _vm._v(" 923000000"),
-                          ],
-                          1
-                        ),
-                      ]),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "save cancel",
+                          attrs: { type: "reset" },
+                        },
+                        [
+                          _c("v-icon", {
+                            staticClass: "icon",
+                            attrs: { scale: "1.2", name: "ban" },
+                          }),
+                          _vm._v(" Cancelar"),
+                        ],
+                        1
+                      ),
                     ]),
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex" }, [
-                  _c(
-                    "div",
-                    { staticClass: "flex-input" },
-                    [
-                      _c("v-icon", {
-                        staticClass: "icon",
-                        attrs: { scale: "1.2", name: "user-injured" },
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          name: "paciente",
-                          id: "paciente",
-                          placeholder: "Nome do Paciente",
-                        },
-                        on: { keyup: _vm.texto },
-                      }),
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex-input" },
-                    [
-                      _c("v-icon", {
-                        staticClass: "icon",
-                        attrs: { scale: "1.2", name: "search" },
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          name: "paciente",
-                          id: "paciente",
-                          placeholder: "Introduza o nome ou o telefone",
-                        },
-                        on: { keyup: _vm.texto },
-                      }),
-                    ],
-                    1
-                  ),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex" }, [
-                  _c(
-                    "div",
-                    { staticClass: "flex-input" },
-                    [
-                      _c("v-icon", {
-                        staticClass: "icon",
-                        attrs: { scale: "1.2", name: "user-injured" },
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          name: "paciente",
-                          id: "paciente",
-                          placeholder: "Nome do Paciente",
-                        },
-                        on: { keyup: _vm.texto },
-                      }),
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex-input" },
-                    [
-                      _c("v-icon", {
-                        staticClass: "icon",
-                        attrs: { scale: "1.2", name: "search" },
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          name: "paciente",
-                          id: "paciente",
-                          placeholder: "Introduza o nome ou o telefone",
-                        },
-                        on: { keyup: _vm.texto },
-                      }),
-                    ],
-                    1
-                  ),
+                  ]),
                 ]),
               ]),
             ]),
@@ -79005,6 +79401,22 @@ var render = function () {
   )
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dat" }, [
+      _c("div", { staticClass: "img" }, [
+        _c("img", { attrs: { src: "/storage/img/m.jpg", alt: "" } }),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "us" }, [
+        _c("h3", [_vm._v("Moser José")]),
+        _vm._v(" "),
+        _c("h6", [_vm._v("Vendedor-caixa")]),
+      ]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -79030,6 +79442,212 @@ var staticRenderFns = [
     return _c("span", [
       _c("img", { attrs: { src: "storage/img/mulher.jpg" } }),
       _vm._v("Maria de Jesus António"),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("select", { attrs: { name: "consulta", id: "consulta" } }, [
+      _c("option", { attrs: { value: "0" } }, [
+        _vm._v("Selecionar a consulta"),
+      ]),
+      _vm._v(" "),
+      _c("option", { attrs: { value: "1" } }, [_vm._v("Pediatria")]),
+      _vm._v(" "),
+      _c("option", { attrs: { value: "2" } }, [_vm._v("Ginecologia")]),
+      _vm._v(" "),
+      _c("option", { attrs: { value: "3" } }, [_vm._v("Estomatologia")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("select", { attrs: { name: "consulta", id: "consulta" } }, [
+      _c("option", { attrs: { value: "0" } }, [_vm._v("Médicos disponíveis")]),
+      _vm._v(" "),
+      _c("option", { attrs: { value: "1" } }, [_vm._v("Pedro Andrade")]),
+      _vm._v(" "),
+      _c("option", { attrs: { value: "2" } }, [_vm._v("Jorge Manuel")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex" }, [
+      _c("div", { staticClass: "fl" }, [
+        _c("div", { staticClass: "radio-ch" }, [
+          _c("label", { staticClass: "enf", attrs: { for: "" } }, [
+            _vm._v("Passar pela enfermagem ?"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "aces" }, [
+            _c("label", { staticClass: "radioContainer" }, [
+              _c("input", {
+                attrs: {
+                  type: "radio",
+                  name: "permissao_completa",
+                  id: "nao",
+                  value: "nao",
+                  checked: "",
+                },
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "circle" }),
+              _vm._v(
+                "\n                                            Não\n                                        "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("label", { staticClass: "radioContainer" }, [
+              _c("input", {
+                attrs: {
+                  type: "radio",
+                  name: "permissao_completa",
+                  id: "sim",
+                  value: "sim",
+                },
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "circle" }),
+              _vm._v(
+                "\n                                            Sim\n                                        "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDados.vue?vue&type=template&id=67a5f88c&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDados.vue?vue&type=template&id=67a5f88c& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "nome-p" }, [
+    _c("div", { staticClass: "paci" }, [
+      _c("h3", [
+        _c(
+          "small",
+          [
+            _c("v-icon", {
+              staticClass: "icon",
+              attrs: { scale: "1.2", name: "user-injured" },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" Maria de Jesus António"),
+      ]),
+      _vm._v(" "),
+      _c("span", [_vm._v("25 Anos")]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "datos" }, [
+      _c(
+        "span",
+        [
+          _c("v-icon", {
+            staticClass: "icon",
+            attrs: { scale: "1", name: "fingerprint" },
+          }),
+          _vm._v(" 00192938LA038\n        "),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "span",
+        [
+          _c("v-icon", {
+            staticClass: "icon",
+            attrs: { scale: "1", name: "mobile-alt" },
+          }),
+          _vm._v(" 923000000\n        "),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("span", [
+        _c(
+          "small",
+          [
+            _c("v-icon", {
+              staticClass: "icon",
+              attrs: { scale: "1", name: "check-circle" },
+            }),
+            _vm._v(" Assegurado"),
+          ],
+          1
+        ),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/recepcao/PacienteDadosSkeleton.vue?vue&type=template&id=e917bb0e& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "nome-p skel" }, [
+      _c("div", { staticClass: "paci" }, [
+        _c("h3", [_c("small"), _vm._v(" "), _c("span")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "ano" }),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "datos" }, [
+        _c("span"),
+        _vm._v(" "),
+        _c("span"),
+        _vm._v(" "),
+        _c("span"),
+      ]),
     ])
   },
 ]
