@@ -469,7 +469,7 @@ body {
   background-color: #42505c;
   border-radius: 6px;
 }
-.home .direita .cabecalho .botao-ver a {
+.home .direita .cabecalho .botao-ver a, .home .direita .cabecalho .botao-ver .back {
   display: flex;
   align-items: center;
   padding: 6px 10px;
@@ -477,12 +477,17 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
+  cursor: pointer;
 }
-.home .direita .cabecalho .botao-ver a .icon {
+.home .direita .cabecalho .botao-ver a .icon, .home .direita .cabecalho .botao-ver .back .icon {
   fill: #fff;
 }
 .home .direita .cabecalho .botao-ver:hover {
   background-color: #42505ce8;
+}
+.home .direita .voltar {
+  justify-content: flex-start !important;
+  gap: 20px;
 }
 .home .direita .header {
   display: flex;
@@ -627,58 +632,6 @@ body {
   justify-content: flex-end;
   gap: 8px;
 }
-.home .direita .dire .page-opcoes {
-  margin: 0 0 30px;
-}
-.home .direita .dire .page-opcoes ul {
-  position: relative;
-}
-.home .direita .dire .page-opcoes ul li {
-  cursor: pointer;
-  list-style: none;
-  display: inline-block;
-  margin: 0 6px;
-}
-.home .direita .dire .page-opcoes ul li:nth-child(1) {
-  margin-left: 0;
-}
-.home .direita .dire .page-opcoes ul li:nth-child(4) {
-  margin-right: 0;
-}
-.home .direita .dire .page-opcoes ul .animacao {
-  position: absolute;
-  height: 30px;
-  z-index: -1;
-  transition: all 0.5s;
-  background-color: #00000030;
-  -webkit-backdrop-filter: blur(28px);
-          backdrop-filter: blur(28px);
-  padding: 8px 10px;
-  border-radius: 12px;
-  color: #363638e8;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.home .direita .dire .page-opcoes ul .s-dia,
-.home .direita .dire .page-opcoes ul li:nth-child(1):hover ~ .animacao {
-  width: 43px;
-  left: -10px;
-}
-.home .direita .dire .page-opcoes ul .s-semana,
-.home .direita .dire .page-opcoes ul li:nth-child(2):hover ~ .animacao {
-  width: 75px;
-  left: 32px;
-}
-.home .direita .dire .page-opcoes ul .s-mes,
-.home .direita .dire .page-opcoes ul li:nth-child(3):hover ~ .animacao {
-  width: 44px;
-  left: 109px;
-}
-.home .direita .dire .page-opcoes ul .s-ano,
-.home .direita .dire .page-opcoes ul li:nth-child(4):hover ~ .animacao {
-  width: 43px;
-  left: 155px;
-}
 .home .direita .dire .page-estatisticas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -691,7 +644,7 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: unset;
   padding: 20px;
 }
 .home .direita .dire .page-estatisticas .esta- .cab {
@@ -717,7 +670,7 @@ body {
   fill: #626991;
 }
 .home .direita .dire .page-estatisticas .esta- .value p {
-  color: #0095ff;
+  color: #585656;
   font-size: 3rem;
   font-weight: 500;
 }
@@ -795,7 +748,7 @@ body {
   color: #d36700;
 }
 .home .direita .dire .page-estatisticas .esta-:nth-child(4) .value p {
-  color: #ffb000;
+  color: #087bc7;
 }
 .home .direita .dire .paciente-trafego table {
   border-spacing: 1;
@@ -874,6 +827,12 @@ body {
 }
 .home .direita .dire .ad-consulta a .icon.marc, .home .direita .dire .ad-consulta span .icon.marc {
   transform: scale(1.25);
+}
+.home .direita .dire .ad-consulta .exa {
+  background-color: #087bc7;
+}
+.home .direita .dire .ad-consulta .exa:hover {
+  background-color: #0571b9;
 }
 .home .direita .dire .fazer-con {
   background-color: #fff;

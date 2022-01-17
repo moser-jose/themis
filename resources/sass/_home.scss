@@ -374,7 +374,7 @@
 
                 background-color: #42505c;
                 border-radius: 6px;
-                a{
+                a,.back{
                     display: flex;
                     align-items: center;
                     padding: 6px 10px;
@@ -382,6 +382,7 @@
                     text-decoration: none;
                     color: #fff;
                     font-size: 14px;
+                    cursor: pointer;
                     .icon{
                         fill: #fff;
                     }
@@ -390,6 +391,10 @@
                     background-color: #42505ce8;
                 }
             }
+        }
+        .voltar{
+            justify-content: flex-start !important;
+            gap: 20px;
         }
         .header{
             display: flex;
@@ -540,58 +545,6 @@
 
 
             }
-            .page-opcoes{
-                margin: 0 0 30px;
-               ul{
-                    position: relative;
-                    li{
-                        cursor: pointer;
-                        list-style: none;
-                        display: inline-block;
-                        margin:0 6px;
-
-                        &:nth-child(1){
-                            margin-left: 0;
-                        }
-                        &:nth-child(4){
-                            margin-right: 0;
-                        }
-                    }
-                    .animacao {
-                        position: absolute;
-                        height: 30px;
-                        z-index: -1;
-                        transition: all .5s;
-                        background-color: #00000030;
-                        backdrop-filter: blur(28px);
-                        padding: 8px 10px;
-                        border-radius: 12px;
-                        color: #363638e8;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                    .s-dia,
-                    li:nth-child(1):hover ~ .animacao {
-                        width: 43px;
-                        left: -10px;
-                    }
-                    .s-semana,
-                    li:nth-child(2):hover ~ .animacao {
-                        width: 75px;
-                        left: 32px;
-                    }
-                    .s-mes,
-                    li:nth-child(3):hover ~ .animacao {
-                        width: 44px;
-                        left: 109px;
-                    }
-                    .s-ano,
-                    li:nth-child(4):hover ~ .animacao {
-                        width: 43px;
-                        left: 155px;
-                    }
-               }
-            }
             .page-estatisticas{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -603,7 +556,7 @@
                     border-radius: 15px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: unset;
                     padding: 20px;
                     .cab{
 
@@ -632,7 +585,7 @@
                     }
                     .value{
                         p{
-                            color: #0095ff;
+                            color: #585656;
                             font-size: 3rem;
                             font-weight: 500;
                         }
@@ -727,7 +680,7 @@
                         .value{
 
                             p{
-                                color: #ffb000;
+                                color: #087bc7;
                             }
                         }
                     }
@@ -816,6 +769,12 @@
                         }
                     }
                 }
+                .exa{
+                    background-color: #087bc7;
+                    &:hover{
+                        background-color: #0571b9;
+                    }
+                }
             }
             .fazer-con{
 
@@ -823,11 +782,6 @@
                 height: 300px;
                 width: 100%;
             }
-
-
-
-
-
             .funcionarios-vendas{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
