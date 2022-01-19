@@ -3,8 +3,15 @@
         <esquerda/>
         <div class="direita">
             <div class="dire">
-                <voltar :icon="'columns'" :ver="false" :nome="'Dashboard'" :descricao="'Página do paciente, veja aqui as principais informações'"/>
-
+                <form class="cab" method="POST">
+                        <cabecario :icon="'columns'" :cabe="true" :voltar="true" :ver="false" :nome="'Dashboard'" :descricao="'Página do paciente, veja aqui as principais informações'"/>
+                        <div class="pesq">
+                            <small><v-icon class="icon" scale="1.1"  name="search"/></small>
+                            <input type="text" name="" id="" placeholder="Actividades do paciente">
+                            <!-- <button type="submit" class="btn">Pesquisar</button> -->
+                            <small><v-icon class="icon" scale="1.1"  name="filter"/></small>
+                        </div>
+                </form>
 
                 <div class="ad-consulta">
                     <span @click="handleModal()"><v-icon class="icon"   name="user-injured"/> Marcar Consulta</span>
@@ -13,11 +20,175 @@
                 </div>
 
 
-                <cabecario :icon="'user-injured'" :ver="false" :nome="'Dados pessoais do paciente'" :descricao="'Todas as informações relevantes do paciente'"/>
+                <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Dados pessoais do paciente'" :descricao="'Todas as informações pessoais relevantes do paciente'"/>
+
+                <div class="dados-pessoais">
+                    <div class="img">
+                        <img src="storage/img/m.jpg" alt="">
+                    </div>
+                    <div class="dados">
+                         <div class="fle-d">
+                            <div class="dad">
+                                <label for="">Nome Completo</label>
+                                <span><small><v-icon class="icon" scale="1"  name="user"/></small> Moser Zeferino Vicente José</span>
+                            </div>
+                            <div class="dad">
+                                <label for="">Nº Processo</label>
+                                <span><small><v-icon class="icon" scale="1"  name="id-badge"/></small> 453-123</span>
+                            </div>
+                            <div class="dad">
+                                <label for="">Sexo</label>
+                                <span><small><v-icon class="icon" scale="1"  name="male"/></small> Masculino</span>
+                            </div>
+
+                        </div>
+                        <div class="fle-d">
+                            <div class="dad">
+                                <label for="">Nº de BI</label>
+                                <span><small><v-icon class="icon" scale="1"  name="fingerprint"/></small> 0009433847LA38</span>
+                            </div>
+                             <div class="dad">
+                                <label for="">Data Nascimento</label>
+                                <span><small><v-icon class="icon" scale="1"  name="calendar"/></small> 12/04/1991 - (31 Anos)</span>
+                            </div>
+                            <div class="dad">
+                                <label for="">Estado Civil</label>
+                                <span><small><v-icon class="icon" scale="1"  name="restroom"/></small> Solteiro</span>
+                            </div>
+
+                        </div>
+                        <div class="fle-d">
+                            <div class="dad">
+                                <label for="">Telefone</label>
+                                <span><small><v-icon class="icon" scale="1"  name="mobile-alt"/></small> 923819419</span>
+                            </div>
+                            <div class="dad">
+                                <label for="">E-mail</label>
+                                <span><small><v-icon class="icon" scale="1"  name="envelope"/></small> mosmmy.jose@gmail.com</span>
+                            </div>
+                            <div class="dad">
+                                <label for="">Seguro</label>
+                                <span><small class="asseg"><v-icon class="icon" scale="1"  name="check-circle"/> Assegurado</small> </span>
+                            </div>
+                        </div>
+                        <div class="fle-d">
+                            <div class="dad">
+                                <label for="">Endereço</label>
+                                <span><small><v-icon class="icon" scale="1"  name="map-marker-alt"/></small>Cidade Alta, rua do pavilhão</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="operacoes">
+                        <router-link to="/" class="butn"><v-icon class="icon" scale="1"  name="pen"/> Editar dados</router-link>
+                        <router-link to="/" class="butn"><v-icon class="icon" scale="1"  name="pen"/> Editar dados</router-link>
+                        <router-link to="/" class="butn"><v-icon class="icon" scale="1"  name="pen"/> Editar dados</router-link>
+                        <router-link to="/" class="butn"><v-icon class="icon" scale="1"  name="trash-alt"/> Eliminar paciente</router-link>
+                    </div>
+                </div>
+
+                <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Dados do seguro, e de emergência'" :descricao="'Dados secundários do paciente'"/>
+                <div class="dados-pessoais outros">
+                    <div class="img">
+                        <div class="titulo">
+                            <span>Seguro de Saúde <small class="asseg"><v-icon class="icon" scale="1"  name="check-circle"/></small></span>
+                        </div>
+                        <div class="dados">
+                            <div class="fle-d">
+                                <div class="dad">
+                                    <label for="">Empresa</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="building"/></small> Moser Zeferino Vicente José</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Nº Apólice</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="id-badge"/></small> 453-123</span>
+                                </div>
+
+                            </div>
+                            <div class="fle-d">
+                                <div class="dad">
+                                    <label for="">Data Inicio</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="calendar"/></small> 12/04/1991</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Data Fim</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="calendar"/></small> 12/04/1991</span>
+                                </div>
+                                 <div class="dad">
+                                    <label for="">Duração</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="clock"/></small> 3 Anos</span>
+                                </div>
 
 
-                <cabecario :icon="'user-injured'" :ver="false" :nome="'Lista dos pacientes a serem atendidos'" :descricao="'Mostra os locais onde os pacientes estão a ser atendidos na clínica'"/>
-                <paciente-trafego/>
+                            </div>
+                            <div class="fle-d">
+                            <div class="dad">
+                                <label for="">Telefone</label>
+                                <span><small><v-icon class="icon" scale="1"  name="mobile-alt"/></small> 923819419</span>
+                            </div>
+                            <div class="dad">
+                                <label for="">E-mail</label>
+                                <span><small><v-icon class="icon" scale="1"  name="envelope"/></small> mosmmy.jose@gmail.com</span>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="titulo">
+                            <span>Contactos de Emergência <small><v-icon class="icon" scale="1"  name="people-arrows"/></small></span>
+                        </div>
+                        <div class="dados">
+                            <div class="fle-d">
+                                <div class="dad">
+                                    <label for="">Nome</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="user"/></small> Moser Zeferino Vicente José</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Parentesco</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="people-arrows"/></small> Irmão</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Telefone</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="mobile-alt"/></small> 923819419</span>
+                                </div>
+
+                            </div>
+                            <div class="fle-d">
+                                <div class="dad">
+                                    <label for="">Nome</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="user"/></small> Moser Zeferino Vicente José</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Parentesco</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="people-arrows"/></small> Irmão</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Telefone</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="mobile-alt"/></small> 923819419</span>
+                                </div>
+
+                            </div>
+                            <div class="fle-d">
+                                <div class="dad">
+                                    <label for="">Nome</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="user"/></small> Moser Zeferino Vicente José</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Parentesco</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="people-arrows"/></small> Irmão</span>
+                                </div>
+                                <div class="dad">
+                                    <label for="">Telefone</label>
+                                    <span><small><v-icon class="icon" scale="1"  name="mobile-alt"/></small> 923819419</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Lista de consultas e exames realizados'" :descricao="'Informação sobre as as consultas e exames realizados'"/>
+                <paciente-consultas/>
 
                 <div  class="modal" @click="handleClick" v-show="modal===true">
                     <div class="corpo">
@@ -42,7 +213,7 @@
                                             <li><span><img src="storage/img/mulher.jpg"/>Maria de Jesus António</span> <small class="telefone"><v-icon class="icon" scale=".9"  name="mobile-alt"></v-icon> 923000000</small></li>
                                         </ul>
                                     </div>
-                                    <paciente-dados-skeleton/>
+                                    <paciente-dados/>
                                 </form>
                             </div>
 
@@ -57,24 +228,20 @@
 <script setup>
     import Esquerda from '../admin/Esquerda.vue'
     import Cabecario from '../Cabecario.vue';
-    import PacienteTransito from '../admin/PacienteTrafego'
-    import PacienteTrafego from '../admin/PacienteTrafego.vue';
+    import PacienteConsultas from '../paciente/PacienteConsultas.vue'
     import InputElement from '../Input.vue'
     import EliminarTexto from '../EliminarTexto.vue';
     import PacienteDados from '../recepcao/PacienteDados.vue'
     import PacienteDadosSkeleton from '../recepcao/PacienteDadosSkeleton.vue';
-    import Voltar from '../CabecarioVoltar.vue';
     export default {
         components:{
             Cabecario,
-            PacienteTransito,
-            PacienteTrafego,
+            PacienteConsultas,
             InputElement,
             EliminarTexto,
             PacienteDados,
             PacienteDadosSkeleton,
-            Esquerda,
-            Voltar
+            Esquerda
         },
         data(){
             return {

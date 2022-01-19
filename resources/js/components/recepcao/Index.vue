@@ -3,17 +3,8 @@
         <esquerda/>
         <div class="direita">
             <div class="dire">
-                <div class="header">
-                    <div class="titulo">
-                        <v-icon class="icon" scale="1.2"  name="columns"></v-icon>
-                        <span>Dashboard</span>
-                        <p>Página inicial do sistema, veja aqui as principais informações</p>
-                    </div>
-                    <span class="notif">
-                        <v-icon class="icon" scale="1.1"  name="bell"></v-icon>
-                        <small>39</small>
-                    </span>
-                </div>
+                <cabecario :cabe="true" :icon="'columns'" :voltar="false" :ver="false" :nome="'Dashboard'" :descricao="'Página inicial do sistema, veja aqui as principais informações'"/>
+
                 <div class="page-user">
                     <div class="img">
                         <img src="storage/img/m.jpg" alt="">
