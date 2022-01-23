@@ -6,6 +6,7 @@
         background-color: $fundo-escuro;
         position: fixed;
         height: 100vh;
+        z-index: 1;
         .logo{
             display: flex;
             align-items: center;
@@ -800,6 +801,15 @@
                                     fill: #fff;
 
                                 }
+                                .sim{
+                                    background-color: #28942d;
+                                }
+                                .nao{
+                                    background-color: #ed5151;
+                                }
+                                .op{
+                                    background-color: #f85d15 !important;
+                                }
                                 .cons{
                                     background-color: #d86100;
                                 }
@@ -816,6 +826,7 @@
                                     fill: #fff;
                                     padding: 10px;
                                     background-color: #087bc7;
+                                    margin-right: 8px;
                                     &:hover{
                                         background-color: #087bc7e1;
                                     }
@@ -973,6 +984,78 @@
 
                 }
             }
+            .opc-paciente{
+                background-color: #59758d;
+                margin: 30px 0 15px;
+                padding: 14px 20px;
+                box-shadow: 0 .2px .2px 0 rgba(0,0,0,.1);
+                border-radius: 6px;
+                color: #fff;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                span{
+                    cursor: pointer;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    fill: #fff;
+                }
+                .hist{
+                    background-color: #252733;
+                    padding: 6px 10px;
+                    color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 .2px .3px 0 rgba(0,0,0,.1);
+                    position: relative;
+                    &:hover{
+                        background-color: #252733e3;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #59758d;
+                        left: 50%;
+                        transform: rotate(45deg) translateX(-50%);
+                        bottom: -31px;
+                        z-index: 0;
+                        box-shadow: 0 .2px .3px 0 rgba(0,0,0,.1);
+                    }
+                }
+            }
+            .hist-opc-paciente{
+                background-color: #fff;
+                margin:30px 0;
+                padding: 10px 20px;
+                border-radius: 6px;
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                span{
+                    cursor: pointer;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    fill: #fff;
+                }
+                .hist{
+                    background-color: #252733;
+                    padding: 4px 10px;
+                    color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 .2px .3px 0 rgba(0,0,0,.1);
+                    position: relative;
+                    font-size: 14px;
+                    &:hover{
+                        background-color: #252733e3;
+                    }
+                }
+            }
         }
     }
 }
@@ -1091,6 +1174,10 @@
 }
 .outros{
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    &:nth-child(1){
+        margin-top: 0px;
+    }
     .img{
         .titulo{
            span{

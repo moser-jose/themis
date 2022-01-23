@@ -133,6 +133,7 @@ body {
   background-color: #252733;
   position: fixed;
   height: 100vh;
+  z-index: 1;
 }
 .home .esquerda .logo {
   display: flex;
@@ -859,6 +860,15 @@ body {
   gap: 6px;
   fill: #fff;
 }
+.home .direita .dire .paciente-trafego table tbody tr td .sim {
+  background-color: #28942d;
+}
+.home .direita .dire .paciente-trafego table tbody tr td .nao {
+  background-color: #ed5151;
+}
+.home .direita .dire .paciente-trafego table tbody tr td .op {
+  background-color: #f85d15 !important;
+}
 .home .direita .dire .paciente-trafego table tbody tr td .cons {
   background-color: #d86100;
 }
@@ -875,6 +885,7 @@ body {
   fill: #fff;
   padding: 10px;
   background-color: #087bc7;
+  margin-right: 8px;
 }
 .home .direita .dire .paciente-trafego table tbody tr td .oper:hover {
   background-color: #087bc7e1;
@@ -1019,6 +1030,78 @@ body {
   border-radius: 2px;
   font-size: 16px;
 }
+.home .direita .dire .opc-paciente {
+  background-color: #59758d;
+  margin: 30px 0 15px;
+  padding: 14px 20px;
+  box-shadow: 0 0.2px 0.2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.home .direita .dire .opc-paciente span {
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: #fff;
+}
+.home .direita .dire .opc-paciente .hist {
+  background-color: #252733;
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0.2px 0.3px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.home .direita .dire .opc-paciente .hist:hover {
+  background-color: #252733e3;
+}
+.home .direita .dire .opc-paciente .hist::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #59758d;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -31px;
+  z-index: 0;
+  box-shadow: 0 0.2px 0.3px 0 rgba(0, 0, 0, 0.1);
+}
+.home .direita .dire .hist-opc-paciente {
+  background-color: #fff;
+  margin: 30px 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.home .direita .dire .hist-opc-paciente span {
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: #fff;
+}
+.home .direita .dire .hist-opc-paciente .hist {
+  background-color: #252733;
+  padding: 4px 10px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0.2px 0.3px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-size: 14px;
+}
+.home .direita .dire .hist-opc-paciente .hist:hover {
+  background-color: #252733e3;
+}
 
 .dados-pessoais, .outros {
   display: grid;
@@ -1131,6 +1214,10 @@ body {
 
 .outros {
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+.outros:nth-child(1) {
+  margin-top: 0px;
 }
 .outros .img .titulo span {
   display: flex;

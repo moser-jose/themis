@@ -187,8 +187,56 @@
                     </div>
                 </div>
 
-                <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Lista de consultas e exames realizados'" :descricao="'Informação sobre as as consultas e exames realizados'"/>
+
+                <div class="opc-paciente">
+                    <span class="hist"><v-icon class="icon" scale="1"  name="notes-medical"/> Histórico Médico</span>
+                    <span>Hábitos</span>
+                    <span>Relatórios</span>
+                    <span>Internamentos</span>
+                    <span>Documentos</span>
+                </div>
+
+                <div>
+                    <div class="hist-opc-paciente">
+                        <span class="hist">Histórico Paciente</span>
+                        <span>Histórico Familiar</span>
+
+                    </div>
+                    <div class="dados-pessoais outros">
+                        <div class="img">
+                            <div class="titulo">
+                                <span>Estado médico <small ><v-icon class="icon" scale="1"  name="notes-medical"/></small></span>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div class="titulo">
+                                <span>Exames com resultados permanente <small><v-icon class="icon" scale="1"  name="vials"/></small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dados-pessoais outros">
+                        <div class="img">
+                            <div class="titulo">
+                                <span>Alergias <small ><v-icon class="icon" scale="1"  name="allergies"/></small></span>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div class="titulo">
+                                <span>Vacinas <small><v-icon class="icon" scale="1"  name="syringe"/></small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Lista de consultas e exames realizados'" :descricao="'Informação sobre as as consultas e exames realizados'"/>
+                    <paciente-consultas/>
+                </div>
+
+
+                <!-- <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Lista de consultas e exames realizados'" :descricao="'Informação sobre as as consultas e exames realizados'"/>
                 <paciente-consultas/>
+                <cabecario :voltar="false" :icon="'user-injured'" :ver="false" :nome="'Lista de consultas e exames realizados'" :descricao="'Informação sobre as as consultas e exames realizados'"/>
+                 --><!-- Histórico, Relatórios, Documentos, Internamentos -->
+
+
 
                 <div  class="modal" @click="handleClick" v-show="modal===true">
                     <div class="corpo">
@@ -213,7 +261,7 @@
                                             <li><span><img src="storage/img/mulher.jpg"/>Maria de Jesus António</span> <small class="telefone"><v-icon class="icon" scale=".9"  name="mobile-alt"></v-icon> 923000000</small></li>
                                         </ul>
                                     </div>
-                                    <paciente-dados/>
+                                    <paciente-dados-skeleton/>
                                 </form>
                             </div>
 
